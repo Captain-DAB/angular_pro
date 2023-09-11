@@ -1,0 +1,161 @@
+<!-- Header -->
+<header [ngClass]="{ sticky: isSticky }">
+  <a href="#" class="logo">KD-Cycle</a>
+  <div id="menu-icon" #menuIcon (click)="toggleMenu()">
+    <ng-container *ngIf="!isMenuOpen"><i class="bi bi-list"></i></ng-container>
+    <ng-container *ngIf="isMenuOpen"><i class="bi bi-x"></i></ng-container>
+  </div>
+  <ul class="navbar" #navbar [ngClass]="{ open: isMenuOpen }">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">Pages</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <ul class="icons">
+    <i class="bi bi-search"></i>
+    <i class="bi bi-heart"></i>
+    <i class="bi bi-cart-plus"></i>
+  </ul>
+</header>
+<section class="home" id="home">
+  <div class="home-text">
+    <h2>
+      Elevate Your <br />
+      Riding Adventures
+    </h2>
+
+    <p>
+      Immerse yourself in the joy of riding as you glide through <br />
+      scenic landscapes, promote eco-friendly transportation, and<br />
+      embrace a healthier lifestyle with our vehicles.
+    </p>
+    <a href="#" class="home-btn">Explore now</a>
+  </div>
+</section>
+
+<!-- <section class="collection">
+  <div class="row">
+    <div class="col-md-6 col-lg-4 col-sm-6">
+      <div class="shop">
+        <div class="shop-img">
+          <img class="img-fluid" src="/assets/background.png" alt="" />
+        </div>
+        <div class="shop-body">
+          <h3>Laptop<br />Collection</h3>
+          <a href="#" class="cta-btn"
+            >Shop now <i class="fa fa-arrow-circle-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4 col-sm-6">
+      <div class="shop">
+        <div class="shop-img">
+          <img class="img-fluid" src="/assets/background.png" alt="" />
+        </div>
+        <div class="shop-body">
+          <h3>Accessories<br />Collection</h3>
+          <a href="#" class="cta-btn"
+            >Shop now <i class="fa fa-arrow-circle-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4 col-sm-6">
+      <div class="shop">
+        <div class="shop-img">
+          <img class="img-fluid" src="/assets/background.png" alt="" />
+        </div>
+        <div class="shop-body">
+          <h3>Cameras<br />Collection</h3>
+          <a href="#" class="cta-btn"
+            >Shop now <i class="fa fa-arrow-circle-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<section class="products">
+  <input
+    type="search"
+    [(ngModel)]="searchTerm"
+    (keyup)="search($event)"
+    placeholder="Search your products here"
+  />
+  <div
+    class="product-title mb-5 d-flex justify-content-between align-items-center"
+  >
+    <h2>
+      Our Latest<br />
+      Products
+    </h2>
+    <a href="#" class="product-btn">View All</a>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-3">
+      <div class="categories mx-3 text-center">
+        <span class="p-4">Categories</span>
+        <ul>
+          <li *ngFor="let category of categories" class="py-3">
+            <a (click)="filterProducts(category.name)">
+              <img *ngIf="category.icon" [src]="category.icon" alt="" />
+              {{ category.name }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-9 col-md-9">
+      <div class="product-items row gap-3 justify-content-center">
+        <div
+          class="card py-3 col-lg-3"
+          *ngFor="let product of products | filter : searchKey : 'title2'"
+          style="width: 16rem"
+          [hidden]="
+            selectedCategory !== 'ALL' && product.category !== selectedCategory
+          "
+        >
+          <i class="card-icon bi bi-heart"></i>
+          <div class="card-title text-center">
+            <p class="fw-bold fs-5" style="color: #7395ae">
+              {{ product.title1 }}
+            </p>
+            <h3 class="text-muted fs-3 fw-bolder text-transform-uppercase">
+              {{ product.title2 }}
+            </h3>
+          </div>
+          <img [src]="product.cardImage" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="card-text text-center">
+              <span class="text-muted fw-bold fs-3">{{
+                product.discountedPrice
+              }}</span>
+              <span
+                class="text-decoration-line-through fw-bold ms-2"
+                style="color: #7395ae"
+                >{{ product.normalPrice }}</span
+              >
+              <select class="form-select w-75 mx-auto my-2 py-2 px-3">
+                <option value="select" selected>{{ opt }}</option>
+                <option value="blue">{{ opt1 }}</option>
+                <option value="green">{{ opt2 }}</option>
+                <option value="yellow">{{ opt3 }}</option>
+                <option value="purple">{{ opt4 }}</option>
+              </select>
+              <a
+                href="#"
+                [style.background-color]="product.bgColor"
+                class="card-btn mb-3"
+                >{{ cart }}<i class="bi bi-cart ms-2"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
