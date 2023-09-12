@@ -71,19 +71,19 @@ export class HomepageComponent implements OnInit {
 
   categories: { name: string; icon: string }[] = [
     { name: 'ALL', icon: '' },
-    { name: 'Bicycle', icon: '/assets/icons8-bicycle-24.png' },
-    { name: 'Motorcycle', icon: '/assets/icons8-motorcycle-24.png' },
-    { name: 'Car', icon: '/assets/icons8-car-24.png' },
-    { name: 'Truck', icon: '/assets/icons8-truck-24.png' },
-    { name: 'Trailer', icon: '/assets/icons8-trailer-unloading-24.png' },
-    { name: 'Lorry', icon: '/assets/icons8-lorry-24.png' },
+    { name: 'Bicycle', icon: 'assets/icons8-bicycle-24.png' },
+    { name: 'Motorcycle', icon: 'assets/icons8-motorcycle-24.png' },
+    { name: 'Car', icon: 'assets/icons8-car-24.png' },
+    { name: 'Truck', icon: 'assets/icons8-truck-24.png' },
+    { name: 'Trailer', icon: 'assets/icons8-trailer-unloading-24.png' },
+    { name: 'Lorry', icon: 'assets/icons8-lorry-24.png' },
   ];
 
   products: Product[] = [
     {
       title1: 'Motorcycle',
       title2: 'Bajaj',
-      cardImage: '/assets/motorcycle.png',
+      cardImage: 'assets/motorcycle.png',
       discountedPrice: '$20.00',
       normalPrice: '$30.00',
       bgColor: '#7894aa',
@@ -92,7 +92,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Bicycle',
       title2: 'ChingChung',
-      cardImage: '/assets/bicycle.png',
+      cardImage: 'assets/bicycle.png',
       discountedPrice: '$10.00',
       normalPrice: '$20.00',
       bgColor: '#fcedcf',
@@ -101,7 +101,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Car',
       title2: 'Honda',
-      cardImage: '/assets/car1.png',
+      cardImage: 'assets/car1.png',
       discountedPrice: '$25.00',
       normalPrice: '$30.00',
       bgColor: '#7894aa',
@@ -110,7 +110,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Truck',
       title2: 'Laomi',
-      cardImage: '/assets/truck1.png',
+      cardImage: 'assets/truck1.png',
       discountedPrice: '$20.00',
       normalPrice: '$30.00',
       bgColor: '#fcedcf',
@@ -119,7 +119,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Motorcycle',
       title2: 'Suzuki',
-      cardImage: '/assets/bike.png',
+      cardImage: 'assets/bike.png',
       discountedPrice: '$20.00',
       normalPrice: '$30.00',
       bgColor: '#7894aa',
@@ -128,7 +128,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Bicycle',
       title2: 'Taktoe',
-      cardImage: '/assets/bicycle1.png',
+      cardImage: 'assets/bicycle1.png',
       discountedPrice: '$10.00',
       normalPrice: '$20.00',
       bgColor: '#fcedcf',
@@ -137,7 +137,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Car',
       title2: 'Camry',
-      cardImage: '/assets/car2.png',
+      cardImage: 'assets/car2.png',
       discountedPrice: '$25.00',
       normalPrice: '$30.00',
       bgColor: '#7894aa',
@@ -146,7 +146,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Truck',
       title2: 'Cacara',
-      cardImage: '/assets/truck2.png',
+      cardImage: 'assets/truck2.png',
       discountedPrice: '$20.00',
       normalPrice: '$30.00',
       bgColor: '#fcedcf',
@@ -155,7 +155,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Motorcycle',
       title2: 'Cycle-Ping',
-      cardImage: '/assets/cycle2.png',
+      cardImage: 'assets/cycle2.png',
       discountedPrice: '$10.00',
       normalPrice: '$15.00',
       bgColor: '#7894aa',
@@ -164,7 +164,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Bicycle',
       title2: 'Bianan',
-      cardImage: '/assets/bicycle2.png',
+      cardImage: 'assets/bicycle2.png',
       discountedPrice: '$10.00',
       normalPrice: '$20.00',
       bgColor: '#fcedcf',
@@ -173,7 +173,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Car',
       title2: 'Milkose',
-      cardImage: '/assets/car3.png',
+      cardImage: 'assets/car3.png',
       discountedPrice: '$35.00',
       normalPrice: '$45.00',
       bgColor: '#7894aa',
@@ -191,7 +191,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Motorcycle',
       title2: 'Ping Pong',
-      cardImage: '/assets/cycle3.png',
+      cardImage: 'assets/cycle3.png',
       discountedPrice: '$10.00',
       normalPrice: '$15.00',
       bgColor: '#7894aa',
@@ -200,7 +200,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Bicycle',
       title2: 'Kismal',
-      cardImage: '/assets/bicycle3.png',
+      cardImage: 'assets/bicycle3.png',
       discountedPrice: '$10.00',
       normalPrice: '$20.00',
       bgColor: '#fcedcf',
@@ -209,7 +209,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Car',
       title2: 'Toyota',
-      cardImage: '/assets/car4.png',
+      cardImage: 'assets/car4.png',
       discountedPrice: '$35.00',
       normalPrice: '$45.00',
       bgColor: '#7894aa',
@@ -218,7 +218,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Truck',
       title2: 'Isuzu',
-      cardImage: '/assets/truck4.png',
+      cardImage: 'assets/truck4.png',
       discountedPrice: '$65.00',
       normalPrice: '$67.00',
       bgColor: '#fcedcf',
@@ -227,7 +227,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Motorcycle',
       title2: 'Ping Pong',
-      cardImage: '/assets/cycle3.png',
+      cardImage: 'assets/cycle3.png',
       discountedPrice: '$10.00',
       normalPrice: '$15.00',
       bgColor: '#7894aa',
@@ -236,7 +236,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Bicycle',
       title2: 'Kismal',
-      cardImage: '/assets/bicycle3.png',
+      cardImage: 'assets/bicycle3.png',
       discountedPrice: '$10.00',
       normalPrice: '$20.00',
       bgColor: '#fcedcf',
@@ -245,7 +245,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Car',
       title2: 'Toyota',
-      cardImage: '/assets/car4.png',
+      cardImage: 'assets/car4.png',
       discountedPrice: '$35.00',
       normalPrice: '$45.00',
       bgColor: '#7894aa',
@@ -254,7 +254,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Truck',
       title2: 'Isuzu',
-      cardImage: '/assets/truck4.png',
+      cardImage: 'assets/truck4.png',
       discountedPrice: '$65.00',
       normalPrice: '$67.00',
       bgColor: '#fcedcf',
@@ -263,7 +263,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Motorcycle',
       title2: 'Ade-Plug',
-      cardImage: '/assets/bike.png',
+      cardImage: 'assets/bike.png',
       discountedPrice: '$15.00',
       normalPrice: '$25.00',
       bgColor: '#7894aa',
@@ -272,7 +272,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Bicycle',
       title2: 'Matade',
-      cardImage: '/assets/bicycle4.png',
+      cardImage: 'assets/bicycle4.png',
       discountedPrice: '$5.00',
       normalPrice: '$20.00',
       bgColor: '#fcedcf',
@@ -281,7 +281,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Car',
       title2: 'Benz',
-      cardImage: '/assets/car5.png',
+      cardImage: 'assets/car5.png',
       discountedPrice: '$35.00',
       normalPrice: '$45.00',
       bgColor: '#7894aa',
@@ -290,7 +290,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Truck',
       title2: 'Iveko',
-      cardImage: '/assets/truck1.png',
+      cardImage: 'assets/truck1.png',
       discountedPrice: '$65.00',
       normalPrice: '$67.00',
       bgColor: '#fcedcf',
@@ -299,7 +299,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Motorcycle',
       title2: 'Vehicle-Loggers',
-      cardImage: '/assets/motorcycle.png',
+      cardImage: 'assets/motorcycle.png',
       discountedPrice: '$15.00',
       normalPrice: '$25.00',
       bgColor: '#7894aa',
@@ -317,7 +317,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Car',
       title2: 'Benz',
-      cardImage: '/assets/car6.png',
+      cardImage: 'assets/car6.png',
       discountedPrice: '$55.00',
       normalPrice: '$65.00',
       bgColor: '#7894aa',
@@ -326,7 +326,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Truck',
       title2: 'Mitsubushi',
-      cardImage: '/assets/truck2.png',
+      cardImage: 'assets/truck2.png',
       discountedPrice: '$450.00',
       normalPrice: '$470.00',
       bgColor: '#fcedcf',
@@ -335,7 +335,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Motorcycle',
       title2: 'Vehicle-Loggers',
-      cardImage: '/assets/cycle3.png',
+      cardImage: 'assets/cycle3.png',
       discountedPrice: '$15.00',
       normalPrice: '$25.00',
       bgColor: '#7894aa',
@@ -344,7 +344,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Bicycle',
       title2: 'Dab-Cycle',
-      cardImage: '/assets/bicycle3.png',
+      cardImage: 'assets/bicycle3.png',
       discountedPrice: '$5.00',
       normalPrice: '$20.00',
       bgColor: '#fcedcf',
@@ -353,7 +353,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Car',
       title2: 'Pickup',
-      cardImage: '/assets/car3.png',
+      cardImage: 'assets/car3.png',
       discountedPrice: '$55.00',
       normalPrice: '$65.00',
       bgColor: '#7894aa',
@@ -362,7 +362,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Truck',
       title2: 'Pempeko',
-      cardImage: '/assets/truck2.png',
+      cardImage: 'assets/truck2.png',
       discountedPrice: '$450.00',
       normalPrice: '$470.00',
       bgColor: '#fcedcf',
