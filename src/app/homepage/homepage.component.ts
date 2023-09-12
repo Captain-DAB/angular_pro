@@ -182,7 +182,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Truck',
       title2: 'PamCas',
-      cardImage: '/assets/truck3.png',
+      cardImage: 'assets/truck3.png',
       discountedPrice: '$40.00',
       normalPrice: '$50.00',
       bgColor: '#fcedcf',
