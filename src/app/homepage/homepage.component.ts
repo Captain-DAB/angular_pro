@@ -308,7 +308,7 @@ export class HomepageComponent implements OnInit {
     {
       title1: 'Bicycle',
       title2: 'Kd-Cycle',
-      cardImage: '/assets/bicycle5.png',
+      cardImage: 'assets/bicycle5.png',
       discountedPrice: '$5.00',
       normalPrice: '$20.00',
       bgColor: '#fcedcf',
